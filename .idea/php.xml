@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/matcha/vendor/composer" />
+      <path value="$PROJECT_DIR$/matcha/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/matcha/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/matcha/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/matcha/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/matcha/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/matcha/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/matcha/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/matcha/vendor/ultra-lite/container" />
+      <path value="$PROJECT_DIR$/matcha/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/matcha/vendor/slim/twig-view" />
+      <path value="$PROJECT_DIR$/matcha/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/matcha/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/matcha/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/matcha/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/matcha/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/matcha/vendor/psr/log" />
+    </include_path>
+  </component>
+</project>

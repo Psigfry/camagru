@@ -1,0 +1,256 @@
+#flex-form {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+#photo-form {
+    min-width: 120px;
+    margin: -60px -160px 0px -200px;
+}
+#form-box {
+    margin: 50px 0px 10px 0px;
+    max-width: 370px;
+    width: 95%;
+    background: white;
+    border: solid 1px #E6E6E6;
+    border-radius: 1px;
+    text-align: center;
+}
+#form-box-signin {
+    margin: 0px 0px 10px 0px;
+    max-width: 370px;
+    width: 95%;
+    background: white;
+    border: solid 1px #E6E6E6;
+    border-radius: 1px;
+    text-align: center;
+}
+#form-box-signin2 {
+    margin: 0px 0px 50px 0px;
+    max-width: 370px;
+    width: 95%;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+#form-box-signin2 img{
+    max-width: 100px;
+    max-height: 60px;
+}
+#regis {
+    margin: 50px 0px 10px -100px;
+}
+#form-box:hover {
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+#form-box-signin:hover {
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+#form-box-signin p {
+    
+    font-size: 14px;
+}
+#form-box p {
+    margin: 30px 0px 22px 0px;
+    font-size: 20px;
+}
+
+
+#form-box p.comment {
+    margin: 0px 20px 5px 20px;
+    font-size: 15px;
+    color: #999999;
+    line-height: 25px;
+}
+
+#form-box span.comment {
+    font-family: myProximaNovaBold;
+}
+
+#form-box input {
+    position: relative;
+    margin: 8px 0px 8px 0px;
+    width: 220px;
+    height: 40px;
+    padding-left: 12px;
+    background-color: #FAFAFA;
+    border: solid 1px #E6E6E6;
+    border-radius: 3px;
+    outline: none;
+    font-family: myProximaNovaReg;
+    letter-spacing: 0.5px;
+}
+
+#form-box input:hover {
+    border-color: #d4d4d4;
+}
+
+#form-box input:focus {
+    border-color: #bebebe;
+}
+
+#form-box input.invalid {
+    border: solid 1px #dfabab;
+    background-color: #ffe2e2;
+}
+
+#form-box input.invalid:hover {
+    border: solid 1px #da9a9a;
+}
+
+#form-box input.invalid:focus {
+    border: solid 1px #c27878;
+}
+
+#form-box input.validation:valid {
+    border: solid 1px #a9dacc;
+    background-color: #f8fffa;
+}
+
+#form-box input.validation:valid:hover {
+    border: solid 1px #8acfbc;
+}
+
+#form-box input.validation:valid:focus {
+    border: solid 1px #6abda5;
+}
+
+#form-box button {
+    position: relative;
+    margin: 22px 0px 35px 0px;
+    width: 220px;
+    height: 40px;
+    background-color: #3E99ED;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+#form-box #form-button button {
+    position: relative;
+    margin: 22px 0px 35px 0px;
+    width: 220px;
+    height: 40px;
+    background-color: #3E99ED;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+
+#form-box button:hover {
+    background-color: #44a5ff;
+}
+#form-box #logo {
+    font-family: 'Billabong';
+    font-size: 50px;
+    transition: 0.4s;
+}
+#form-box #logo-text {
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.4s;
+    color: #999999;
+}
+#form-box button:active {
+    background-color: #2e73b4;
+}
+
+#form-button a {
+    
+    font-size: 12px;
+    color: #999999;
+}
+
+#form-button button {
+    color: #231F20;
+    margin: 22px 0px 22px 0px;
+    background-color: #f3f3f3;
+}
+
+#form-box #form-button .form-forgot {
+    margin-top: -10px;
+}
+
+#form-button button:hover {
+    background-color: #ececec;
+}
+
+#form-button button:active {
+    background-color: #ececec;
+    opacity: .5;
+}
+
+#form-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#form-upload button {
+    margin: 0px 0px;
+    color: #231F20;
+    background-color: #f3f3f3;
+}
+
+#form-upload button:hover {
+    background-color: #ececec;
+}
+
+#form-upload button:active {
+    background-color: #ececec;
+    opacity: .5;
+}
+
+#form-upload button.invalid {
+    background-color: #ffe2e2;
+    color: #c27878;
+}
+
+#form-upload input {
+    margin: 0px 0px;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#form-upload input:valid {
+    opacity: 1;
+}
+@media screen and (max-width: 1300px) {
+    #photo-form {
+        display: none;
+    }
+    #form-box {
+        margin: 10px 0px 10px 7px;
+    }
+    #form-box-signin2{
+        margin: 0px 0px 10px 7px;
+    }
+    #form-box-signin2{
+        margin: 0px 0px 90px 7px;
+    }
+    #flex-form {
+        position: relative;
+        top: 70px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    #photo-form {
+        display: inline;
+    }
+}
+@media screen and (min-height: 1200px) and (min-width: 1300px) {
+    #flex-form {
+        margin: 200px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,420 @@
+@font-face {
+    
+    font-family: "Billabong"; 
+
+    src: url("../style/Billabong.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+    /* unicode-range: U+0072; */
+} 
+* {
+    box-sizing: border-box;
+    transition: background-color .25s, box-shadow .25s, opacity .25s, border .5s, filter .25s, color .25s;
+}
+
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    margin: -50px 0px 0px 0px;
+    top: 0;
+    height: 100%;
+    color: #231f20;
+    background-color: #FAFAFA;
+    
+}
+#wrap {
+    position: relative;
+    padding: 0px 0px 80px 0px;
+    min-height: 100%;
+}
+#navbar {
+    position: relative;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 30px 10px;
+    margin-top: 45px;
+    overflow: hidden;
+    border-bottom: solid 1px #E6E6E6;
+    background-color: rgba(255, 255, 255, .95);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+#navbar a {
+    position: relative;
+    float: left;
+    height: 48px;
+    padding: 12px;
+    color: #231F20;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+#navbar a:active{
+    opacity: .5;
+}
+#navbar img {
+    width: 24px;
+}
+#navbar #logo {
+    margin-left: 15%;
+    padding: 16px 12px 10px 12px;
+    font-size: 50px;
+    transition: 0.4s;
+    font-family: 'Billabong';
+}
+#navbar .right {
+    float: right;
+    margin-right: 15%;
+}
+#navbar .right a:hover {
+    background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #navbar #logo {
+        margin-left: 5%;
+        font-size: 40px !important;
+    }
+
+    #navbar .right {
+        margin-right: 5%;
+    }
+
+    #navbar .right a {
+        padding: 12px 8px !important;
+    }
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    border-top: solid 1px #E6E6E6;
+    background-color: white;
+}
+
+
+#footer a {
+    margin: 10px;
+    text-align: center;
+    font-family: myProximaNovaReg;
+    color: #999999;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #231F20;
+}
+
+
+#footer a:hover span {
+    color: #231F20;
+}
+
+#footer a span.heart {
+    color: #999999;
+}
+
+#footer a:hover span.heart {
+    color: #e65454;
+}
+#feed {
+    position: relative;
+    /* padding-bottom: 150px; */
+    width: 100%;
+    font-family: myProximaNovaReg;
+}
+
+#feed-box {
+    position: relative;
+    left: 50%;
+    width: 95%;
+    max-width: 550px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transform: translate(-50%);
+    border: solid 1px #E6E6E6;
+    border-radius: 3px; 
+    background-color: white;
+}
+
+#feed-box:hover {
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+#feed-box a {
+    color: #231F20;
+}
+
+#feed-header {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+}
+
+#feed-user-pic {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 50%;
+    background: center;
+    background-size: cover;
+    background-color: lightgrey;
+}
+
+#feed-user-login {
+    height: 40px;
+    margin: 10px 0px;
+}
+
+#feed-user-login a {
+    font-family: myProximaNovaBold;
+    color: #231F20;
+    text-decoration: none;
+}
+
+#feed-user-login p {
+    margin: 11px 0px;
+}
+
+#feed-date {
+    height: 40px;
+    margin: 10px 10px 10px auto;
+}
+
+#feed-date a {
+    font-family: myProximaNovaReg;
+    font-size: 13px;
+    color: #999999;
+    text-decoration: none;
+}
+
+#feed-date p {
+    margin: 12px 0px;
+}
+
+#feed-pic {
+    position: relative;
+    width: 100%;
+    background: center;
+    background-size: cover;
+    background-color: lightgrey;
+}
+
+#feed-pic::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+#feed-buttons {
+    position: relative;
+    left: 50%;
+    width: 100%;
+    height: 30px;
+    transform: translate(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+#feed-like-button {
+    position: relative;
+    width: 32%;
+    height: 30px;
+    margin: 5px 1px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+}
+
+#feed-like-button:hover {
+    background-color: #f3f3f3;
+}
+
+#feed-like-button:active {
+    opacity: .5;
+}
+
+#feed-buttons-img {
+    position: relative;
+    top: -4px;
+    right: 5px;
+    width: 16px;
+}
+
+#feed-buttons-txt {
+    position: relative;
+    top: -7px;
+    left: 5px;
+    font-family: myProximaNovaReg;
+    font-size: 15px;
+}
+
+#feed-bar {
+    width: 90%;
+    margin-top: 10px;
+    border: none;
+    border-top: solid 1px #E6E6E6;
+}
+
+#feed-likedby {
+    position: relative;
+    margin-bottom: 5px;
+    width: 95%;
+    left: 50%;
+    height: 18px;
+    transform: translate(-50%);
+}
+
+#feed-likedby p {
+    margin: 0px;
+    font-family: myProximaNovaReg;
+    font-size: 15px;
+    color: #231F20;
+}
+
+#feed-likedby span {
+    font-family: myProximaNovaBold;
+}
+
+#feed-legend {
+    position: relative;
+    margin-bottom: 5px;
+    left: 50%;
+    width: 95%;
+    height: 18px;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+
+#feed-legend p {
+    display: inline;
+    font-family: myProximaNovaReg;
+    font-size: 15px;
+    color: #231F20;
+}
+
+#feed-legend span {
+    font-family: myProximaNovaBold;
+}
+
+#feed-morecoms {
+    position: relative;
+    left: 50%;
+    width: 95%;
+    height: 18px;
+    transform: translate(-50%);
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+#feed-morecoms p {
+    display: inline;
+    font-family: myProximaNovaBold;
+    font-size: 15px;
+    color: #999999;
+}
+
+#feed-comments {
+    position: relative;
+    left: 50%;
+    width: 95%;
+    max-height: 58px;
+    transform: translate(-50%);
+    margin-bottom: 8px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+}
+
+#feed-comments p {
+    margin: 2px 0px 0px 0px;
+    font-family: myProximaNovaReg;
+    font-size: 15px;
+    color: #231F20;
+}
+
+#feed-comments span {
+    font-family: myProximaNovaBold;
+}
+
+#feed-bar-2 {
+    width: 90%;
+    margin-top: 8px;
+    border: none;
+    border-top: solid 1px #E6E6E6;
+}
+
+#feed-comment-field {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+#feed-comment-field input {
+    height: 30px;
+    margin: 0px 10px 10px 10px;
+    flex-grow: 2;
+    font-size: 14px;
+    border: solid 1px white;
+    outline: none;
+}
+
+#feed-comment-field button {
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+    flex-grow: 0;
+    border: none;
+    border-radius: 15px;
+    background-color: #3E99ED;
+    font-family: myProximaNovaReg;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+#feed-comment-field button:hover {
+    background-color: #44a5ff;
+}
+
+#feed-comment-field button:active {
+    background-color: #2e73b4;
+}
+
+#load-more {
+    position: relative;
+    left: 0;
+    margin: 40px 0px 0px 0px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+}
